@@ -9855,7 +9855,7 @@ exports.default = {
 
   logo: 'http://yx-web.nos.netease.com/webdoc/h5/im/logo.png',
 
-  defaultUserIcon: 'http://yx-web.nos.netease.com/webdoc/h5/im/default-icon.png',
+  defaultUserIcon: '/webdemo/h5/res/nick/xwz.jpg',
 
   noticeIcon: 'http://yx-web.nos.netease.com/webdoc/h5/im/notice-icon.png',
 
