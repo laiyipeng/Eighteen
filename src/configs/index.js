@@ -14,7 +14,7 @@ export default {
   // 资源路径根目录，为了方便用户部署在二级以上URL路径上
   resourceUrl: 'http://yx-web.nos.netease.com/webdoc/h5',
   // 用户logo地址
-  logo: '/dist/xwz.jpg',
+  logo: '/webdemo/h5/xwz.jpg',
   // 默认用户头像
   defaultUserIcon: 'http://yx-web.nos.netease.com/webdoc/h5/im/default-icon.png',
   // 系统通知图标
