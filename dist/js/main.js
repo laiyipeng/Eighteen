@@ -10394,7 +10394,7 @@ exports.default = {
 
   resourceUrl: 'http://yx-web.nos.netease.com/webdoc/h5',
 
-  logo: 'http://yx-web.nos.netease.com/webdoc/h5/im/logo.png',
+  logo: '/webdemo/h5/res/nick/Eighteen.jpg',
 
   defaultUserIcon: '/webdemo/h5/res/nick/xwz.jpg',
 
@@ -21801,7 +21801,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         name: 'room'
       }
     }
-  }, [_vm._v("直播间")])], 1), _vm._v(" "), _c('tab-item', {
+  }, [_vm._v("找ET")])], 1), _vm._v(" "), _c('tab-item', {
     staticClass: "router-link",
     on: {
       "on-item-click": _vm.changePage
