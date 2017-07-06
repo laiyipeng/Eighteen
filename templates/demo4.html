@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>rainyday.js demo #4</title>
+        <style media="screen">
+            body {
+                overflow: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                color: #333;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #infobox {
+                z-index: 100;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            #infobox div {
+                width: 260px;
+                padding: 15px;
+                background-color: #f2f2f2;
+                visibility: hidden;
+            }
+            #infobox:hover div {
+                visibility: visible;
+            }
+        </style>
+        <script src="dist/js/rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this,
+                        gravityAngle: Math.PI / 9
+                    });
+                    engine.trail = engine.TRAIL_SMUDGE;
+                    engine.rain([ [1, 0, 1000], [3, 3, 1] ], 100);
+                };
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://i.imgur.com/VuX2Nf0.jpg';
+
+                // hide info container
+                document.getElementById('infobox').children[0].style.visibility = 'visible';
+                setTimeout(function(){
+                    // remove inline style -otherwise the hover effect would not be effective
+                    document.getElementById('infobox').children[0].style.visibility = '';
+                }, 5000);
+           }
+            function go(){
+                window.location.href='demo5.html'
+            }
+        </script>
+    </head>
+    <body onload="run();" onclick="go()">
+        <img id="background" alt="background" src="" />
+        <div id="infobox" >
+            <span>
+
+            </span>
+        </div>
+    </body>
+</html>

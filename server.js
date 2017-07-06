@@ -43,6 +43,26 @@ app.get('/', function (req, res, next) {
     res.redirect('/webdemo/h5/index.html')
 })
 
+app.get('/webdemo/h5/demo1.html', function (req, res, next) {
+    res.render(path.join(projPath, 'templates/demo1'));
+})
+
+app.get('/webdemo/h5/demo2.html', function (req, res, next) {
+    res.render(path.join(projPath, 'templates/demo2'));
+})
+
+app.get('/webdemo/h5/demo3.html', function (req, res, next) {
+    res.render(path.join(projPath, 'templates/demo3'));
+})
+
+app.get('/webdemo/h5/demo4.html', function (req, res, next) {
+    res.render(path.join(projPath, 'templates/demo4'));
+})
+
+app.get('/webdemo/h5/demo5.html', function (req, res, next) {
+    res.render(path.join(projPath, 'templates/demo5'));
+})
+
 // 修改侦听服务器端口
 const port = 2001
 app.listen(port)
