@@ -64,6 +64,6 @@ app.get('/webdemo/h5/demo5.html', function (req, res, next) {
 })
 
 // 修改侦听服务器端口
-const port = 2001
+const port = 1314
 app.listen(port)
 console.info(`Listen on Port ${port}`)
